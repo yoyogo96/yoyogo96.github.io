@@ -7,7 +7,6 @@ navToggle.addEventListener('click', () => {
     navToggle.setAttribute('aria-expanded', navMenu.classList.contains('open'));
 });
 
-// Close menu on link click
 navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => navMenu.classList.remove('open'));
 });
@@ -16,7 +15,6 @@ navMenu.querySelectorAll('a').forEach(link => {
 const sections = document.querySelectorAll('.section, .hero');
 const navLinks = document.querySelectorAll('.nav-menu a');
 
-const observerOptions = { rootMargin: '-20% 0px -60% 0px' };
 const navObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -26,13 +24,13 @@ const navObserver = new IntersectionObserver(entries => {
             });
         }
     });
-}, observerOptions);
+}, { rootMargin: '-20% 0px -60% 0px' });
 
 sections.forEach(section => navObserver.observe(section));
 
-// ===== Scroll Animations =====
+// ===== Scroll Fade-in =====
 const fadeElements = document.querySelectorAll(
-    '.research-card, .pub-item, .timeline-item, .award-card, .book-card, .contact-card, .info-card, .about-main'
+    '.research-card, .pub-year-group, .tl-item, .award-item, .book-card, .contact-item, .sidebar-card, .about-text, .lab-info, .recruit-card'
 );
 
 fadeElements.forEach(el => el.classList.add('fade-in'));
@@ -44,21 +42,9 @@ const fadeObserver = new IntersectionObserver(entries => {
             fadeObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
 fadeElements.forEach(el => fadeObserver.observe(el));
-
-// ===== Hero Particles =====
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 30; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.top = Math.random() * 100 + '%';
-    particle.style.animationDelay = Math.random() * 8 + 's';
-    particle.style.animationDuration = (6 + Math.random() * 6) + 's';
-    particlesContainer.appendChild(particle);
-}
 
 // ===== Publication Filters =====
 const filterBtns = document.querySelectorAll('.pub-filter');
@@ -72,21 +58,32 @@ filterBtns.forEach(btn => {
         btn.classList.add('active');
 
         pubItems.forEach(item => {
-            if (filter === 'all' || item.dataset.category.includes(filter)) {
+            const categories = item.dataset.category || '';
+            if (filter === 'all' || categories.includes(filter)) {
                 item.classList.remove('hidden');
             } else {
                 item.classList.add('hidden');
             }
         });
+
+        // Hide empty year groups
+        document.querySelectorAll('.pub-year-group').forEach(group => {
+            const visibleItems = group.querySelectorAll('.pub-item:not(.hidden)');
+            group.style.display = visibleItems.length === 0 ? 'none' : '';
+        });
     });
 });
 
-// ===== Navbar Background on Scroll =====
+// ===== Navbar scroll effect =====
 const navbar = document.getElementById('navbar');
+let lastScroll = 0;
+
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(10, 14, 23, 0.95)';
+    const scrollY = window.scrollY;
+    if (scrollY > 100) {
+        navbar.style.boxShadow = '0 1px 8px rgba(0,0,0,0.06)';
     } else {
-        navbar.style.background = 'rgba(10, 14, 23, 0.85)';
+        navbar.style.boxShadow = 'none';
     }
+    lastScroll = scrollY;
 }, { passive: true });
