@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유용균 (Yonggyun Yu) - KAERI AI Application Research Lab</title>
+    <meta name="description" content="유용균 박사 - 한국원자력연구원 인공지능응용연구실장, UST 전임교원. AI, 딥러닝, 위상최적설계, 원자력 이상탐지 연구.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Y. Yu</a>
+            <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">소개</a></li>
+                <li><a href="#research">연구분야</a></li>
+                <li><a href="#publications">논문</a></li>
+                <li><a href="#career">경력</a></li>
+                <li><a href="#awards">수상</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">한국원자력연구원 · 인공지능응용연구실</p>
+                <h1 class="hero-title">유용균 <span class="hero-title-en">Yonggyun Yu, Ph.D.</span></h1>
+                <p class="hero-desc">AI &times; Nuclear Engineering &mdash; 인공지능으로 원자력의 미래를 설계합니다</p>
+                <div class="hero-tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Topology Optimization</span>
+                    <span class="tag">Anomaly Detection</span>
+                    <span class="tag">Physics-Informed ML</span>
+                    <span class="tag">LLM Applications</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#research" class="btn btn-primary">연구분야 보기</a>
+                    <a href="#publications" class="btn btn-outline">논문 목록</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar">
+                    <div class="avatar-placeholder">
+                        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="60" cy="45" r="22" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 105c0-22 18-40 40-40s40 18 40 40" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">18+</span>
+                        <span class="stat-label">SCI 논문</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">14+</span>
+                        <span class="stat-label">연구 경력(년)</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">대학원생 지도</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">소개</h2>
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="about-lead">인공지능 기술을 원자력 및 방사선 분야에 적용하여 안전하고 효율적인 에너지 시스템을 구현하는 연구를 수행하고 있습니다.</p>
+                    <p>한국원자력연구원(KAERI) 인공지능응용연구실장이자 과학기술연합대학원대학교(UST) 전임교원으로서, 딥러닝 기반 위상최적설계, 원자력 시설 이상탐지, 물리정보 기반 기계학습, 대규모 언어모델(LLM) 응용 등 다양한 연구를 이끌고 있습니다.</p>
+                    <p>KAIST에서 기계공학과 전산학을 복수전공한 후, 바이올린 브릿지의 위상최적설계로 박사학위를 취득하였습니다. 연구에 대한 열정과 개인적 관심사를 결합하는 '덕업일치'를 실천하며, 정부출연연구기관 AI 커뮤니티인 AI프렌즈를 설립하여 대표를 맡고 있습니다.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <h3>현재 직위</h3>
+                        <ul>
+                            <li>한국원자력연구원 책임연구원</li>
+                            <li>인공지능응용연구실장</li>
+                            <li>UST KAERI 스쿨 전임교원</li>
+                            <li>NVIDIA DLI Ambassador</li>
+                            <li>AI프렌즈 대표</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>학력</h3>
+                        <ul>
+                            <li>KAIST 기계공학 박사 (2010)</li>
+                            <li>KAIST 기계공학 석사 (2003)</li>
+                            <li>KAIST 기계공학·전산학 학사 (2001)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section section-alt" id="research">
+        <div class="container">
+            <h2 class="section-title">연구 분야</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4v40M4 24h40M10 10l28 28M38 10L10 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>AI 기반 위상최적설계</h3>
+                    <p>딥러닝을 활용하여 반복 계산 없이 최적 구조를 예측하는 세계 최초의 연구를 수행. 구조물, 열교환기, 악기 등 다양한 분야에 적용.</p>
+                    <div class="research-keywords">
+                        <span>Topology Optimization</span>
+                        <span>Deep Neural Network</span>
+                        <span>Generative Design</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/><path d="M24 6v36M6 24h36" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3>원자력 시설 이상탐지</h3>
+                    <p>딥 오토인코더 기반 이상탐지 시스템 개발. 하나로(HANARO) 연구용 원자로 및 KOMAC 선형가속기에 실제 적용.</p>
+                    <div class="research-keywords">
+                        <span>Anomaly Detection</span>
+                        <span>Autoencoder</span>
+                        <span>HANARO</span>
+                        <span>KOMAC</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/><path d="M16 28l6-8 6 4 8-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>물리정보 기반 기계학습</h3>
+                    <p>물리 법칙을 기계학습에 통합하여 데이터 효율성과 예측 신뢰성을 향상. 배관 감육률 예측, 충격 파라미터 예측 등에 적용.</p>
+                    <div class="research-keywords">
+                        <span>Physics-Informed ML</span>
+                        <span>Wall Thinning</span>
+                        <span>CNN</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M8 36V12l12 12L8 36z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M20 36V12l12 12-12 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M32 36V12l12 12-12 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>대규모 언어모델 (LLM) 응용</h3>
+                    <p>LLM을 기계 시스템 제어 및 초음파 시뮬레이션에 적용. Multi-agent LLM 기반 자동화 연구 수행.</p>
+                    <div class="research-keywords">
+                        <span>Large Language Models</span>
+                        <span>Multi-Agent</span>
+                        <span>Simulation</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M14 38c-4-4-6-10-6-16C8 12 15 4 24 4s16 8 16 18c0 6-2 12-6 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 38h12v4a2 2 0 01-2 2H20a2 2 0 01-2-2v-4z" stroke="currentColor" stroke-width="2"/><path d="M20 38v-6m8 6v-6" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <h3>심층강화학습 최적설계</h3>
+                    <p>심층강화학습(DRL)을 활용한 열교환기 설계 최적화. 마이크로 원자로 PCHE 열교환 효율 14.8% 향상 달성.</p>
+                    <div class="research-keywords">
+                        <span>Deep Reinforcement Learning</span>
+                        <span>Heat Exchanger</span>
+                        <span>PCHE</span>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 8c-8 0-12 6-12 12s6 10 12 16c6-6 12-10 12-16s-4-12-12-12z" stroke="currentColor" stroke-width="2"/><path d="M20 20c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>악기 음향 최적설계</h3>
+                    <p>바이올린 브릿지와 종(bell)의 음향 특성 최적화 연구. 개인적 바이올린 연주 열정에서 출발한 '덕업일치' 연구.</p>
+                    <div class="research-keywords">
+                        <span>Acoustic Design</span>
+                        <span>Violin Bridge</span>
+                        <span>Frequency Response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section" id="publications">
+        <div class="container">
+            <h2 class="section-title">주요 논문</h2>
+            <p class="section-desc">SCI 학술지 게재 논문 (Selected)</p>
+
+            <div class="pub-filters">
+                <button class="pub-filter active" data-filter="all">전체</button>
+                <button class="pub-filter" data-filter="topology">위상최적설계</button>
+                <button class="pub-filter" data-filter="anomaly">이상탐지</button>
+                <button class="pub-filter" data-filter="nuclear">원자력 AI</button>
+                <button class="pub-filter" data-filter="llm">LLM</button>
+                <button class="pub-filter" data-filter="acoustic">음향설계</button>
+            </div>
+
+            <div class="pub-list">
+                <article class="pub-item" data-category="llm">
+                    <span class="pub-year">2025</span>
+                    <div class="pub-content">
+                        <h4>Artificial intelligence orchestration for text-based ultrasonic simulation via self-review by multi-large language model agents</h4>
+                        <p class="pub-journal">Scientific Reports, 2025</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="llm">
+                    <span class="pub-year">2025</span>
+                    <div class="pub-content">
+                        <h4>Toward intelligent mechanical systems: control and decision-making with large language models</h4>
+                        <p class="pub-journal">JMST Advances, 2025</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="anomaly">
+                    <span class="pub-year">2025</span>
+                    <div class="pub-content">
+                        <h4>Deep Learning-based Anomaly Detection in Drift Tube Quadrupole Operation for the KOMAC LINAC</h4>
+                        <p class="pub-journal">Journal of Nuclear Science and Technology, 2025</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="nuclear">
+                    <span class="pub-year">2024</span>
+                    <div class="pub-content">
+                        <h4>Design Optimization of Heat Exchanger Using Deep Reinforcement Learning</h4>
+                        <p class="pub-authors">G. Lee, Y. Joo, S.-U. Lee, T. Kim, Y. Yu, H.-G. Kim</p>
+                        <p class="pub-journal">International Journal of Heat and Mass Transfer, 2024</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="anomaly">
+                    <span class="pub-year">2022</span>
+                    <div class="pub-content">
+                        <h4>Development of deep autoencoder-based anomaly detection system for HANARO</h4>
+                        <p class="pub-journal">Nuclear Engineering and Technology, 2022</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="anomaly">
+                    <span class="pub-year">2022</span>
+                    <div class="pub-content">
+                        <h4>Quantile Autoencoder with Abnormality Accumulation for Anomaly Detection of Multivariate Sensor Data</h4>
+                        <p class="pub-authors">S. Ryu, J. Yim, J. Seo, H. Seo, Y. Yu</p>
+                        <p class="pub-journal">IEEE Access, 2022</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="topology nuclear">
+                    <span class="pub-year">2022</span>
+                    <div class="pub-content">
+                        <h4>Dual-Fluid Topology Optimization of Printed-Circuit Heat Exchanger with Low-Pumping-Power Design</h4>
+                        <p class="pub-authors">G. Lee, Y. Joo, Y. Yu, H.-G. Kim</p>
+                        <p class="pub-journal">2022</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="topology">
+                    <span class="pub-year">2021</span>
+                    <div class="pub-content">
+                        <h4>Unit module-based convergence acceleration for topology optimization using the spatiotemporal deep neural network</h4>
+                        <p class="pub-authors">Y. Joo, Y. Yu (co-first), I.G. Jang</p>
+                        <p class="pub-journal">IEEE Access, 2021</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="nuclear">
+                    <span class="pub-year">2021</span>
+                    <div class="pub-content">
+                        <h4>Pipeline wall thinning rate prediction model based on machine learning</h4>
+                        <p class="pub-authors">S. Moon, K. Kim, G.G. Lee, Y. Yu, D. Kim</p>
+                        <p class="pub-journal">Nuclear Engineering and Technology, 2021</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="nuclear">
+                    <span class="pub-year">2020</span>
+                    <div class="pub-content">
+                        <h4>Impact parameter prediction of a simulated metallic loose part using convolutional neural network</h4>
+                        <p class="pub-authors">S. Moon, S. Han, T. Kang, K. Kim, Y. Yu, J. Eom</p>
+                        <p class="pub-journal">Nuclear Engineering and Technology, 2020</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="topology">
+                    <span class="pub-year">2018</span>
+                    <div class="pub-content">
+                        <h4>Deep learning for determining a near-optimal topological design without any iteration</h4>
+                        <p class="pub-authors">Y. Yu, T. Hur, J. Jung, I.G. Jang</p>
+                        <p class="pub-journal">Structural and Multidisciplinary Optimization, 2018</p>
+                        <span class="pub-badge">AI 기반 위상최적설계 세계 최초 논문</span>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="acoustic">
+                    <span class="pub-year">2013</span>
+                    <div class="pub-content">
+                        <h4>Topology optimization for a frequency response and its application to a violin bridge</h4>
+                        <p class="pub-authors">Y. Yu, I.G. Jang, B.M. Kwak</p>
+                        <p class="pub-journal">Structural and Multidisciplinary Optimization, 2013</p>
+                    </div>
+                </article>
+                <article class="pub-item" data-category="acoustic">
+                    <span class="pub-year">2011</span>
+                    <div class="pub-content">
+                        <h4>Design sensitivity analysis of acoustical damping and its application to design of musical bells</h4>
+                        <p class="pub-journal">Structural and Multidisciplinary Optimization, 2011</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pub-more">
+                <a href="https://scholar.google.com/citations?user=tXElczcAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn-outline">Google Scholar에서 전체 논문 보기 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="section section-alt" id="books">
+        <div class="container">
+            <h2 class="section-title">저서</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-emoji">&#x1F4D8;</span>
+                    </div>
+                    <div class="book-info">
+                        <h4>AI와 원자력</h4>
+                        <p>인공지능 기술의 원자력 분야 적용 사례와 방법론을 소개하는 저서</p>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-emoji">&#x1F4D7;</span>
+                    </div>
+                    <div class="book-info">
+                        <h4>AI와 연구자: 사례와 방법</h4>
+                        <p>연구자를 위한 AI 활용 가이드 - 실제 연구 사례와 적용 방법을 담은 실용서</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section class="section" id="career">
+        <div class="container">
+            <h2 class="section-title">경력</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 &mdash; 현재</div>
+                    <div class="timeline-content">
+                        <h4>UST KAERI 스쿨 전임교원</h4>
+                        <p>과학기술연합대학원대학교 AI 전공 전임교원. 석·박사·박사후연구원 지도 (재학생 5명)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 &mdash; 현재</div>
+                    <div class="timeline-content">
+                        <h4>NVIDIA DLI Ambassador</h4>
+                        <p>NVIDIA Deep Learning Institute 대학 앰배서더로서 딥러닝 교육 및 보급 활동</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 &mdash; 현재</div>
+                    <div class="timeline-content">
+                        <h4>대한기계학회 AI·머신러닝 연구분과 이사</h4>
+                        <p>학회 차원의 AI 연구 활성화 및 연구자 네트워킹 주도</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 &mdash; 현재</div>
+                    <div class="timeline-content">
+                        <h4>AI프렌즈 대표</h4>
+                        <p>정부출연연구기관 AI 커뮤니티(사단법인) 설립 및 운영. 매주 수요 세미나, 유튜브 채널, 중소기업 컨설팅, 로보틱스랩 운영</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2012 &mdash; 현재</div>
+                    <div class="timeline-content">
+                        <h4>한국원자력연구원 (KAERI)</h4>
+                        <p>책임연구원 · 인공지능응용연구실장. AI 기술의 원자력·방사선 분야 적용 연구 총괄</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2010 &mdash; 2012</div>
+                    <div class="timeline-content">
+                        <h4>KAIST 모바일 하버 프로젝트</h4>
+                        <p>연구교수 및 팀장. 크레인 제어 소프트웨어 개발 프로젝트 수행</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2001 &mdash; 2010</div>
+                    <div class="timeline-content">
+                        <h4>KAIST 대학원</h4>
+                        <p>기계공학 석사(2003) 및 박사(2010) 취득. 박사논문: 바이올린 브릿지의 위상최적설계</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section section-alt" id="awards">
+        <div class="container">
+            <h2 class="section-title">수상 및 활동</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon gold">&#x1F3C6;</div>
+                    <div class="award-info">
+                        <h4>제5회 AI 그랜드 챌린지 우승</h4>
+                        <p>과학기술정보통신부 주최, 장관 표창 수상 (KAERI-Genti 연합팀)</p>
+                        <span class="award-year">2021</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon silver">&#x1F948;</div>
+                    <div class="award-info">
+                        <h4>AI 그랜드 챌린지 2위</h4>
+                        <p>과학기술정보통신부 주최 AI 경진대회</p>
+                        <span class="award-year">2022</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon green">&#x1F310;</div>
+                    <div class="award-info">
+                        <h4>NVIDIA DLI University Ambassador</h4>
+                        <p>NVIDIA 공인 딥러닝 교육 대사</p>
+                        <span class="award-year">2021 &mdash; 현재</span>
+                    </div>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon blue">&#x1F4A1;</div>
+                    <div class="award-info">
+                        <h4>AI프렌즈 설립</h4>
+                        <p>정부출연연구기관 AI 커뮤니티 사단법인 설립 및 대표 역임</p>
+                        <span class="award-year">2019 &mdash; 현재</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>&#x1F4E7; 이메일</h4>
+                    <a href="mailto:ygyu@ust.ac.kr">ygyu@ust.ac.kr</a>
+                </div>
+                <div class="contact-card">
+                    <h4>&#x1F3E2; 소속</h4>
+                    <p>한국원자력연구원 (KAERI)<br>인공지능응용연구실<br>대전광역시 유성구</p>
+                </div>
+                <div class="contact-card">
+                    <h4>&#x1F393; 대학원</h4>
+                    <p>UST KAERI 스쿨<br>AI 전공<br>석사·박사 과정 모집 중</p>
+                </div>
+                <div class="contact-card">
+                    <h4>&#x1F517; 링크</h4>
+                    <ul class="contact-links">
+                        <li><a href="https://scholar.google.com/citations?user=tXElczcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                        <li><a href="https://www.researchgate.net/scientific-contributions/Yonggyun-Yu-2225058979" target="_blank" rel="noopener">ResearchGate</a></li>
+                        <li><a href="https://www.linkedin.com/in/yoyogo96/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://kaeri.ust.ac.kr" target="_blank" rel="noopener">UST KAERI School</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yonggyun Yu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
